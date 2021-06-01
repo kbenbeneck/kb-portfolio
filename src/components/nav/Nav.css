@@ -1,0 +1,11 @@
+.nav-logo {
+    
+    max-width: 100%;
+    height: auto;
+}
+
+.side-nav {
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(black, black, grey);
+}
