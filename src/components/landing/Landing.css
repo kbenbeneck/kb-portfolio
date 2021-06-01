@@ -1,0 +1,20 @@
+.landing {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(83, 83, 83);
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../imgs/pentas.jpeg);
+  
+}
+
+.greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.greeting p {
+    margin: auto;
+    top: 50%;
+}
