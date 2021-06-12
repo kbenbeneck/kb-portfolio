@@ -1,7 +1,7 @@
 import React from 'react';
-const About = () => {
+const About = ({refProps}) => {
     return(
-        <div>
+        <div ref={refProps}>
             About
         </div>
     );
