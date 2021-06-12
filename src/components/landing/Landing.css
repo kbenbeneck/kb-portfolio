@@ -1,4 +1,4 @@
-.landing {
+.landing-zone {
     width: 100vw;
     height: 100vh;
     background-color: rgb(83, 83, 83);
@@ -8,13 +8,18 @@
   
 }
 
-.greeting {
-    display: flex;
-    justify-content: center;
+.greeting-flex {
+    text-align: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
+    font-size: 32pt;
+    line-height: 36pt;
+    color: rgb(255, 255, 255);
+    text-shadow: black 1px 1px 1px;
+    padding: 0 10px;
+    
 }
-.greeting p {
-    margin: auto;
-    top: 50%;
-}
+
