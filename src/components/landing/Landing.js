@@ -1,14 +1,20 @@
 import './Landing.css';
 import React from 'react';
-const Landing = () => {
+const Landing = ({onScroll}) => {
+    
     return(
-        <div className="landing">
-            <div className="greeting">
-                <p>
-                    Hi 
-                </p>
+        <section className="landing-zone">
+            <div className="greeting-flex">
+                
+                    Hello, I'm Karl Benbeneck.
+                    <br />
+                    I'm a full-stack web developer.
+                
+                <button className="ui button" onClick={() => {onScroll()}}>
+                    View my work
+                </button>
             </div>
-        </div>
+        </section>
     );
 };
 export default Landing;
