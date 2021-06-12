@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { useRef } from 'react';
 import About from './About';
 import Blog from './Blog';
 import Landing from './landing/Landing';
@@ -10,19 +10,23 @@ import Social from './Social';
 
 
 const App = () => {
+    const aboutRef = useRef()
+    const scrollCallBack = () => {
+        aboutRef.current.scrollIntoView({ behavior: 'smooth'})
+    }
     return(
         <div className="app-bg">
             <div className="ui grid">
                 <div className="ui row">
                     <div className="sixteen wide column">
-                        <Landing />
+                        <Landing onScroll={scrollCallBack}/>
                     </div>
                     <div className="three wide column">
                         <Nav />
                     </div>
                     <div className="thirteen wide column">
                         
-                        <About />
+                        <About refProps={aboutRef} />
                         <Blog />
                         <Portfolio />
                         <Skills />
