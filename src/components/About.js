@@ -1,9 +1,13 @@
+
 import React from 'react';
+import { Cube } from './cube/Cube';
+
 const About = ({refProps}) => {
     return(
-        <div ref={refProps}>
-            About
-        </div>
+        <section ref={refProps} className="about-section">
+            <h2 className="header">About Me</h2>
+            <Cube />
+        </section>
     );
 };
 export default About;
